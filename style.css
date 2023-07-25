@@ -1,4 +1,17 @@
-/* style.css */
-h1 {
-    color: #336699; /* You can replace this hex code with the color you want */
+nav ul li {
+    position: relative;
+  }
+
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  nav ul li:hover ul {
+    display: block;
   }

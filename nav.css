@@ -1,0 +1,40 @@
+/* Reset default list styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Main navigation styles */
+  nav ul li {
+    display: inline-block; /* If you want horizontal navigation */
+    /* Or use display: block; for vertical navigation */
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #eee;
+  }
+  
+  /* Dropdown menu styles */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    /* Adjust the positioning according to your preference */
+    top: 40px;
+    left: 0;
+    /* Styling for the dropdown menu */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
