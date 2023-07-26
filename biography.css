@@ -1,0 +1,116 @@
+/* biography.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark green background color */
+    color: #fff; /* White text color */
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #333; /* Dark green background color for navigation */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox to create a horizontal navigation */
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Add space between navigation items */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #0f0; /* Dark green color for navigation links */
+    padding: 10px 15px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Slightly darker green background on hover */
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222; /* Dark green background color for submenu */
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+  
+  /* Biography page styles */
+  h1, h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    color: #0f0; /* Dark green color for main headings */
+  }
+  
+  h3 {
+    color: #0f0; /* Dark green color for subheadings */
+  }
+  
+  p {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #ddd; /* Light gray color for paragraphs */
+  }
+  
+  blockquote {
+    margin: 0;
+    padding-left: 20px;
+    border-left: 3px solid #0f0; /* Dark green color for blockquote */
+    color: #0f0; /* Dark green color for blockquote text */
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  main {
+    display: grid; /* Use CSS Grid for the main content */
+    grid-template-columns: 1fr; /* Create one column */
+    grid-gap: 20px; /* Add some space between grid items */
+    background-color: #222; /* Dark green background color for main content */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  main a {
+    color: #0f0; /* Dark green color for links in the main content */
+    text-decoration: none;
+  }
+  
+  main a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image Styles */
+  .normal-size {
+    max-width: 100%; /* Set the maximum width to fit the container */
+    height: auto; /* This ensures the aspect ratio is maintained */
+  }
+  
+  .center-align {
+    display: flex;
+    justify-content: center;
+  }
+  
