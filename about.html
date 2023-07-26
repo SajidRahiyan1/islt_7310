@@ -6,7 +6,22 @@
   <link rel="stylesheet" href="nav1.css">
   <link rel="stylesheet" href="style1.css">
   <link rel="stylesheet" href="biography.css">
-  
+  <style>
+    /* Add some CSS to style the video container */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio (divided height by width) */
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Section -->
@@ -61,5 +76,9 @@
   <div class="center-align">
     <img src="IMG_2208.jpg" alt="My Picture" class="normal-size">
   </main>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rpv61tEdT_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
 </body>
 </html>
