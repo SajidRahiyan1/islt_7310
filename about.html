@@ -2,8 +2,42 @@
 <html>
 <head>
   <title>My Webpage</title>
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="style1.css">
+  
 </head>
 <body>
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="references.html">References</a>
+        <ul>
+          <li><a href="#">Submenu 1</a></li>
+          <li><a href="#">Submenu 2</a></li>
+          <li><a href="#">Submenu 3</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#contact.html">Contact</a>
+        <!-- Add the dropdown menu inside the <li> element -->
+        <ul>
+          <li><a href="#">Submenu 1</a></li>
+          <li><a href="#">Submenu 2</a></li>
+          <li><a href="#">Submenu 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="learn.html">Learn</a>
+        <ul>
+          <li><a href="#">Submenu 1</a></li>
+          <li><a href="#">Submenu 2</a></li>
+          <li><a href="#">Submenu 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
   <!-- About Me Section -->
   <h1>Sajid Rahiyan</h1>
   <h3>Senior at Mizzou</h3>
@@ -13,15 +47,15 @@
     <blockquote>"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</blockquote>
     Emphasized words: <em>Success</em>, <em>failure</em>.<br>
     Bold word: <strong>Final</strong>.
-
-    <main>
-      <h1>Resume Section</h1>
-      <!-- Your main content goes here -->
-
-      <!-- Relative link to resume.pdf -->
-      <p><a href="Basic_Resume.docx.pdf">My Resume</a></p>
-  </main>
-
   </p>
+
+  <!-- Main Section (Resume) -->
+  <main>
+    <h1>Resume Section</h1>
+    <!-- Your main content goes here -->
+
+    <!-- Relative link to resume.pdf -->
+    <p><a href="Basic_Resume.docx.pdf">My Resume</a></p>
+  </main>
 </body>
 </html>
