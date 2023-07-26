@@ -44,6 +44,7 @@ body {
     background-color: #222;
     border: 1px solid #ccc;
     padding: 10px;
+    width: 300px; /* Increase the width to accommodate longer texts */
   }
   
   nav ul li:hover ul {
@@ -146,57 +147,7 @@ body {
       max-width: 800px; /* Keep the original maximum width for larger screens */
     }
   }
-/* style.css */
-
-/* Other styles go here */
-
-/* @media query for printing */
-@media print {
-    /* Your Name (h1) */
-    h1 {
-      color: black;
-      font-family: 'Serif', sans-serif; /* Use a serif font */
-    }
-  
-    /* Your description about yourself (p) */
-    p {
-      color: black;
-      font-family: 'Serif', sans-serif; /* Use a serif font */
-    }
-  
-    /* Your Education Details (ul or ol) */
-    ul, ol {
-      color: black;
-      font-family: 'Serif', sans-serif; /* Use a serif font */
-    }
-  
-    /* Your Quote (blockquote) */
-    blockquote {
-      color: black;
-      font-family: 'Serif', sans-serif; /* Use a serif font */
-    }
-  
-    /* Your Footer (contact information without any logo or icons) */
-    footer {
-      color: black;
-      font-family: 'Serif', sans-serif; /* Use a serif font */
-    }
-  
-    /* Make all font Black */
-    body {
-      color: black;
-    }
-  
-    /* Adjust the printable margins to be 1" on all sides */
-    body {
-      margin: 1in;
-    }
-  }
-  
-  /* Rest of your CSS styles */
-
-/* Footer Styles */
-footer {
+  footer {
     display: flex;
     justify-content: center;
   }
@@ -213,4 +164,4 @@ footer {
   footer a:hover {
     transform: scale(1.2); /* Enlarge the icons by 20% on hover */
   }
- 
+  

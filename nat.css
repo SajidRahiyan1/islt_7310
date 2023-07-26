@@ -1,0 +1,12 @@
+.normal-size1 {
+    max-width: 100px; /* Set a maximum width for the image */
+    height: auto;
+    border: 2px solid #0f0; /* Add a green border around the image */
+}
+
+/* Top right corner positioning */
+.top-right {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
