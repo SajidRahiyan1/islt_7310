@@ -1,15 +1,16 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #222; /* Dark green background color */
-    color: #fff; /* White text color */
+    background-color: #222;
+    color: #fff;
   }
   
   /* Navigation Styles */
   nav {
-    background-color: #333; /* Dark green background color for navigation */
+    background-color: #333;
     padding: 10px;
   }
   
@@ -17,22 +18,22 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use Flexbox to create a horizontal navigation */
-    justify-content: center; /* Center the navigation items horizontally */
+    display: flex;
+    justify-content: center;
   }
   
   nav ul li {
-    margin-right: 20px; /* Add space between navigation items */
+    margin-right: 20px;
   }
   
   nav ul li a {
     text-decoration: none;
-    color: #0f0; /* Dark green color for navigation links */
+    color: #0f0;
     padding: 10px 15px;
   }
   
   nav ul li a:hover {
-    background-color: #555; /* Slightly darker green background on hover */
+    background-color: #555;
   }
   
   nav ul li ul {
@@ -40,7 +41,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #222; /* Dark green background color for submenu */
+    background-color: #222;
     border: 1px solid #ccc;
     padding: 10px;
   }
@@ -57,28 +58,28 @@ body {
   }
   
   h1 {
-    color: #0f0; /* Dark green color for main headings */
-    font-size: 36px; /* Increase the font size */
+    color: #0f0;
+    font-size: 36px;
   }
   
   h3 {
-    color: #0f0; /* Dark green color for subheadings */
-    font-size: 24px; /* Increase the font size */
+    color: #0f0;
+    font-size: 24px;
   }
   
   p {
     margin-bottom: 20px;
     text-align: justify;
-    color: #ddd; /* Light gray color for paragraphs */
-    font-size: 18px; /* Increase the font size */
+    color: #ddd;
+    font-size: 18px;
   }
   
   blockquote {
     margin: 0;
     padding-left: 20px;
-    border-left: 3px solid #0f0; /* Dark green color for blockquote */
-    color: #0f0; /* Dark green color for blockquote text */
-    font-size: 20px; /* Increase the font size */
+    border-left: 3px solid #0f0;
+    color: #0f0;
+    font-size: 20px;
   }
   
   em {
@@ -90,19 +91,19 @@ body {
   }
   
   main {
-    display: grid; /* Use CSS Grid for the main content */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fluid grid with minimum item width of 300px */
-    grid-gap: 20px; /* Add some space between grid items */
-    background-color: #222; /* Dark green background color for main content */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    background-color: #222;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    border: 2px solid #0f0; /* Add border to the main section */
-    border-radius: 10px; /* Round the corners */
+    border: 2px solid #0f0;
+    border-radius: 10px;
   }
   
   main a {
-    color: #0f0; /* Dark green color for links in the main content */
+    color: #0f0;
     text-decoration: none;
   }
   
@@ -112,8 +113,8 @@ body {
   
   /* Image Styles */
   .normal-size {
-    max-width: 100%; /* Set the maximum width to fit the container */
-    height: auto; /* This ensures the aspect ratio is maintained */
+    max-width: 100%;
+    height: auto;
   }
   
   .center-align {
@@ -121,4 +122,28 @@ body {
     justify-content: center;
   }
   
+  /* Media Queries */
+  /* Small screens, such as smartphones */
+  @media screen and (max-width: 767px) {
+    main {
+      grid-template-columns: 1fr; /* Change to a single column layout */
+      max-width: 100%; /* Make the main content span the full width */
+      padding: 10px; /* Reduce the padding for small screens */
+    }
+  }
+  
+  /* Medium screens, such as tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the number of columns */
+      max-width: 600px; /* Limit the maximum width for tablets */
+    }
+  }
+  
+  /* Large screens, such as desktops */
+  @media screen and (min-width: 1024px) {
+    main {
+      max-width: 800px; /* Keep the original maximum width for larger screens */
+    }
+  }
   
