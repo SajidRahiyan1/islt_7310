@@ -193,4 +193,24 @@ body {
     }
   }
   
+  /* Rest of your CSS styles */
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Footer Icon Styles */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+  }
+  
+  /* Enlarge the icons on hover */
+  footer a:hover {
+    transform: scale(1.2); /* Enlarge the icons by 20% on hover */
+  }
  
