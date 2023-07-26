@@ -1,0 +1,28 @@
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  caption {
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  thead th {
+    background-color: rgb(70, 223, 70);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #060202;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(3, 2, 2);
+  }
+  
+  /* Your existing media queries for responsiveness */
