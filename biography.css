@@ -1,5 +1,3 @@
-/* biography.css */
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,6 +10,7 @@ body {
   /* Navigation Styles */
   nav {
     background-color: #333; /* Dark green background color for navigation */
+    padding: 10px;
   }
   
   nav ul {
@@ -19,6 +18,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* Use Flexbox to create a horizontal navigation */
+    justify-content: center; /* Center the navigation items horizontally */
   }
   
   nav ul li {
@@ -50,23 +50,27 @@ body {
   }
   
   /* Biography page styles */
-  h1, h3 {
+  h1,
+  h3 {
     text-align: center;
     margin: 20px 0;
   }
   
   h1 {
     color: #0f0; /* Dark green color for main headings */
+    font-size: 36px; /* Increase the font size */
   }
   
   h3 {
     color: #0f0; /* Dark green color for subheadings */
+    font-size: 24px; /* Increase the font size */
   }
   
   p {
     margin-bottom: 20px;
     text-align: justify;
     color: #ddd; /* Light gray color for paragraphs */
+    font-size: 18px; /* Increase the font size */
   }
   
   blockquote {
@@ -74,6 +78,7 @@ body {
     padding-left: 20px;
     border-left: 3px solid #0f0; /* Dark green color for blockquote */
     color: #0f0; /* Dark green color for blockquote text */
+    font-size: 20px; /* Increase the font size */
   }
   
   em {
@@ -86,12 +91,14 @@ body {
   
   main {
     display: grid; /* Use CSS Grid for the main content */
-    grid-template-columns: 1fr; /* Create one column */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fluid grid with minimum item width of 300px */
     grid-gap: 20px; /* Add some space between grid items */
     background-color: #222; /* Dark green background color for main content */
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    border: 2px solid #0f0; /* Add border to the main section */
+    border-radius: 10px; /* Round the corners */
   }
   
   main a {
@@ -113,4 +120,5 @@ body {
     display: flex;
     justify-content: center;
   }
+  
   
